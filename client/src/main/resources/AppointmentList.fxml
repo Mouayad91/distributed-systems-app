@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import AppointmentListController?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.ListView?>-->
+<!--<?import javafx.scene.layout.VBox?>-->
+<!--<VBox xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--    <Label text="Appointment List" />-->
+<!--    <ListView fx:id="appointmentList" prefHeight="200">-->
+<!--        <cellFactory>-->
+<!--            <AppointmentCellFactory />-->
+<!--        </cellFactory>-->
+<!--    </ListView>-->
+<!--</VBox>-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="GridPane" prefHeight="496.0" prefWidth="748.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.AllUsersController">
+    <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <children>
+            <Button fx:id="deleteUserBtn" layoutX="315.0" layoutY="350.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="228.0" stylesheets="@styles.css" text="Delete selected User" />
+            <Button fx:id="backBtn" layoutX="315.0" layoutY="417.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="228.0" stylesheets="@styles.css" text="Back" />
+            <Button fx:id="printUsersBtn" layoutX="315.0" layoutY="213.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="228.0" stylesheets="@styles.css" text="Print all users" />
+            <Button fx:id="showUserBtn" layoutX="315.0" layoutY="282.0" mnemonicParsing="false" onAction="#showUser" prefHeight="34.0" prefWidth="228.0" stylesheets="@styles.css" text="Show User's account" />
+            <TableView fx:id="allUsersTable" layoutX="21.0" layoutY="21.0" prefHeight="454.0" prefWidth="263.0">
+                <columns>
+                    <TableColumn fx:id="username" prefWidth="137.59999704360962" text="Username" />
+                    <TableColumn fx:id="email" prefWidth="122.4000244140625" text="Email" />
+                </columns>
+            </TableView>
+        </children></AnchorPane>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+
+
+
+
+</GridPane>

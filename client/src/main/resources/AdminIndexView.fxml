@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="GridPane" alignment="CENTER" prefHeight="700" prefWidth="850" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.AdminIndexController">
+
+<GridPane id="GridPane" style="-fx-background-color: #e5e5e5;" GridPane.rowIndex="2" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane layoutY="1.0" prefHeight="484.0" prefWidth="1110.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <children>
+            <Button fx:id="createAppointmentBtn" layoutX="284.0" layoutY="52.0" mnemonicParsing="false" onAction="#createAppointment" prefHeight="34.0" prefWidth="160.0" stylesheets="@styles.css" text="Create an Apointment" />
+            <Button fx:id="logoutBtn" layoutX="17.0" layoutY="52.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="106.0" stylesheets="@styles.css" text="Logout" />
+
+            <Button fx:id="invitationsBtn" layoutX="953.0" layoutY="99.0" mnemonicParsing="false" onAction="#goToInvitations" prefHeight="34.0" prefWidth="140.0" stylesheets="@styles.css" text="Invitations" />
+            <Button fx:id="showAllUsersBtn" layoutX="650.0" layoutY="99.0" mnemonicParsing="false" onAction="#showAllUsers" prefHeight="34.0" prefWidth="140.0" stylesheets="@styles.css" text="Show all Users" />
+            <Button fx:id="createUserBtn" layoutX="953.0" layoutY="52.0" mnemonicParsing="false" onAction="#createUser" prefHeight="34.0" prefWidth="140.0" stylesheets="@styles.css" text="Create User" />
+            <Button fx:id="showLogsBtn" layoutX="650.0" layoutY="52.0" mnemonicParsing="false" onAction="#showLogs" prefHeight="34.0" prefWidth="140.0" stylesheets="@styles.css" text="Show Logs" />
+            <TableView fx:id="appointmentTableView" layoutX="3.0" layoutY="147.0" prefHeight="319.0" prefWidth="1107.0">
+                <columns>
+                    <TableColumn fx:id="title" prefWidth="117.0" text="Title" />
+                    <TableColumn fx:id="startDate" prefWidth="122.4000244140625" text="Start Time" />
+                    <TableColumn fx:id="endDate" prefWidth="124.00001525878906" text="End Time" />
+               <TableColumn fx:id="lct" prefWidth="90.4000244140625" text="Location" />
+                    <TableColumn fx:id="description" prefWidth="192.7999267578125" text="Description" />
+                    <TableColumn fx:id="inviter" prefWidth="59.99993896484375" text="Inviter" />
+                    <TableColumn fx:id="status" prefWidth="91.20001220703125" text="Status" />
+                    <TableColumn fx:id="creationDate" prefWidth="154.4000244140625" text="Creation Date" />
+                    <TableColumn fx:id="lastEditDate" prefWidth="152.79998779296875" text="Last Edit Date" />
+                </columns>
+            </TableView>
+         <Button fx:id="appointmentsButton" layoutX="284.0" layoutY="99.0" mnemonicParsing="false" onAction="#showAllAppointments" prefHeight="34.0" prefWidth="160.0" stylesheets="@styles.css" text="Show all Appointments" />
+            <Label layoutX="490.0" layoutY="14.0" prefHeight="35.0" prefWidth="140.0" text="Appointments">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Circle fx:id="notifyDot" fill="#d31414" layoutX="1091.0" layoutY="101.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+        </children>
+    </AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

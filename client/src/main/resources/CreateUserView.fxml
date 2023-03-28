@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="GridPane" alignment="CENTER" prefHeight="496.0" prefWidth="748.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.CreateUserController">
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+        <Pane layoutX="-1.0" layoutY="8.0" prefHeight="481.0" prefWidth="802.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0">
+            <children>
+                <Button fx:id="createUserBtn" layoutX="32.0" layoutY="393.0" mnemonicParsing="false" onAction="#createUser" prefHeight="34.0" prefWidth="158.0" stylesheets="@styles.css" text="Create User" textFill="#260202" />
+                <Button fx:id="backBtn" layoutX="525.0" layoutY="393.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="158.0" stylesheets="@styles.css" text="Back" textFill="#260202" />
+                <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="66.0" prefHeight="30.0" prefWidth="500" stylesheets="@styles.css" text="Username" />
+                <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="301.0" prefHeight="30.0" prefWidth="500" stylesheets="@styles.css" text="Role" />
+                <Label alignment="TOP_LEFT" layoutX="28.0" layoutY="248.0" prefHeight="30.0" prefWidth="500" stylesheets="@styles.css" text="Email address" />
+                <TextField fx:id="usernametxt" layoutX="515.0" layoutY="56.0" prefHeight="34.0" prefWidth="158.0" promptText="Username" />
+                <PasswordField fx:id="passwordtxt" layoutX="515.0" layoutY="192.0" prefHeight="34.0" prefWidth="158.0" promptText="Password" stylesheets="@styles.css" />
+                <TextField fx:id="emailtxt" layoutX="515.0" layoutY="246.0" prefHeight="34.0" prefWidth="158.0" promptText="Email address" />
+                <Separator layoutX="-6.0" layoutY="325.0" prefHeight="34.0" prefWidth="757.0" />
+                <Label layoutX="32.0" layoutY="201.0" prefHeight="17.0" prefWidth="100.0" stylesheets="@styles.css" text="Password" />
+                <ChoiceBox fx:id="roleChoiceBox" layoutX="515.0" layoutY="306.0" prefHeight="25.0" prefWidth="158.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Admin" />
+                            <String fx:value="User" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            <TextField fx:id="firstName" layoutX="515.0" layoutY="96.0" prefHeight="34.0" prefWidth="158.0" promptText="First Name" />
+            <Label layoutX="32.0" layoutY="113.0" stylesheets="@styles.css" text="First Name" />
+            <Label layoutX="33.0" layoutY="148.0" stylesheets="@styles.css" text="Last Name" />
+            <TextField fx:id="lastName" layoutX="515.0" layoutY="143.0" prefHeight="34.0" prefWidth="158.0" promptText="Last Name" />
+            </children>
+        </Pane>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

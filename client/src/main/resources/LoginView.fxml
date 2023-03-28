@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<GridPane id="GridPane" alignment="CENTER" prefHeight="500" prefWidth="700" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.LoginController">
+
+<AnchorPane id="GridPane" prefHeight="496.0" prefWidth="748.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+              <Pane layoutY="8.0" prefHeight="481.0" prefWidth="802.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0">
+                  <children>
+                      <Button fx:id="LoginBtn" layoutX="263.0" layoutY="252.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="283.0" stylesheets="@styles.css" text="Login" textFill="#ffffff" />
+                      <Label id="welcome" alignment="CENTER" layoutX="4.0" layoutY="22.0" prefHeight="30.0" prefWidth="762.0" stylesheets="@styles.css" text="Effortlessly schedule and manage appointments " />
+                      <TextField fx:id="usernametxt" layoutX="261.0" layoutY="138.0" prefHeight="34.0" prefWidth="283.0" promptText="Username" />
+                      <PasswordField fx:id="passwordtxt" layoutX="261.0" layoutY="182.0" prefHeight="34.0" prefWidth="283.0" promptText="Password" stylesheets="@styles.css" />
+                      <Separator layoutX="-12.0" layoutY="343.0" prefHeight="34.0" prefWidth="838.0" />
+                      <Separator layoutX="-31.0" layoutY="52.0" prefHeight="34.0" prefWidth="869.0" />
+                  <Label layoutX="460.0" layoutY="415.0" text="Not registered yet? ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="605.0" layoutY="413.0" mnemonicParsing="false" onAction="#goToRegister" text="Sign Up" />
+      
+      
+                  </children>
+              </Pane>
+         </children></AnchorPane>
+      <MeshView />
+    </children>
+</AnchorPane>
+</GridPane>

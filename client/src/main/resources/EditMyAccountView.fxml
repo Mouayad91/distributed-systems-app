@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="GridPane" prefHeight="Infinity" prefWidth="Infinity" style="-fx-background-color: #e5e5e5;" alignment="CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.EditAccountController">
+<AnchorPane id="pane" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"/>
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="600.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+
+        <Pane layoutX="-1.0" layoutY="8.0" prefHeight="481.0" prefWidth="802.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0">
+            <children>
+
+                <Button fx:id="saveBtn" layoutX="650.0" layoutY="425.0" mnemonicParsing="false" onAction="#edit" prefHeight="34.0" prefWidth="114.0" stylesheets="@styles.css" text="Save Changes" textFill="#260202" />
+                <Button fx:id="backBtn" layoutX="695.0" layoutY="500.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="77.0" stylesheets="@styles.css" text="Back" textFill="#260202" />
+                <Label layoutX="450.0" layoutY="280.0" text="First name" />
+                <Label layoutX="450.0" layoutY="370.0" text="Last name" />
+                <TextField fx:id="newFirstNametxt" layoutX="539.0" layoutY="280.0" onAction="#edit" prefHeight="34.0" prefWidth="222.0" promptText="First name" />
+                <TextField fx:id="newLastNametxt" layoutX="539.0" layoutY="370.0" onAction="#edit" prefHeight="34.0" prefWidth="222.0" promptText="Last name" />
+
+                <TextField fx:id="newPasswordReptxt" layoutX="539.0" layoutY="191.0" onAction="#edit" prefHeight="34.0" prefWidth="222.0" promptText="Repeat New Password" />
+                <TextField fx:id="newUserName" layoutX="14.0" layoutY="102.0" onAction="#edit" prefHeight="34.0" prefWidth="222.0" promptText="new Username" />
+                <TextField fx:id="newEmail" layoutX="14.0" layoutY="191.0" onAction="#edit" prefHeight="34.0" prefWidth="222.0" promptText="new email" />
+                <Label layoutX="443.0" layoutY="119.0" text="New Password" />
+                <Label layoutX="385.0" layoutY="208.0" text="rewrite the new password" />
+                <Label layoutX="247.0" layoutY="119.0" text="New Username" />
+                <Label layoutX="247.0" layoutY="208.0" text="New Email" />
+                <Label layoutX="23.0" layoutY="241.0" prefHeight="34.0" prefWidth="144.0" text="Username: " />
+                <Label layoutX="23.0" layoutY="334.0" prefHeight="46.0" prefWidth="221.0" text="Email: " />
+                <Label layoutX="28.0" layoutY="291.0" prefHeight="34.0" prefWidth="144.0" text="ID: " />
+                <Label fx:id="userNameLbl" layoutX="114.0" layoutY="241.0" prefHeight="34.0" prefWidth="144.0" text="Username" />
+                <Label fx:id="emailLbl" layoutX="114.0" layoutY="334.0" prefHeight="46.0" prefWidth="221.0" text="Email" />
+                <Label fx:id="idLbl" layoutX="114.0" layoutY="291.0" prefHeight="34.0" prefWidth="144.0" text="ID" />
+                <Separator layoutX="34.0" layoutY="400.0" prefHeight="34.0" prefWidth="757.0" />
+                <Separator layoutX="23.0" layoutY="57.0" prefHeight="34.0" prefWidth="757.0" />
+                <TextField fx:id="newPasswordtxt" layoutX="539.0" layoutY="102.0" prefHeight="34.0" prefWidth="222.0" promptText="New Password" />
+                <Label layoutX="331.0" layoutY="21.0" text="Edit my account">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="34.0" layoutY="427.0" text="Please enter a password matching our password requirements: min length: 4" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>

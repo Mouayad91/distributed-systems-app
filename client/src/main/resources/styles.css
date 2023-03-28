@@ -1,0 +1,20 @@
+.button {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #8B0000;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-family: "Arial";
+    -fx-text-fill: #0F9D58;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+#welcome {
+    -fx-font-family: "Cooper Black";
+    -fx-text-fill: #0F9D58;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}

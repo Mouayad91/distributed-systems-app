@@ -1,0 +1,13 @@
+de.htwsaar.vs.gruppe05.server
+de.htwsaar.vs.gruppe05.server.authentication
+de.htwsaar.vs.gruppe05.server.DTO
+de.htwsaar.vs.gruppe05.server.enums
+de.htwsaar.vs.gruppe05.server.exceptions
+de.htwsaar.vs.gruppe05.server.helper
+de.htwsaar.vs.gruppe05.server.mail
+de.htwsaar.vs.gruppe05.server.mapper
+de.htwsaar.vs.gruppe05.server.model
+de.htwsaar.vs.gruppe05.server.repository
+de.htwsaar.vs.gruppe05.server.rest
+de.htwsaar.vs.gruppe05.server.service
+de.htwsaar.vs.gruppe05.server.sse

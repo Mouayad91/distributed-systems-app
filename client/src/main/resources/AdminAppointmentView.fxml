@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="GridPane" alignment="CENTER" prefHeight="Infinity" prefWidth="Infinity" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.AdminAppointmentController">
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <TableView fx:id="appointmentTableView" layoutX="7.0" layoutY="14.0" prefHeight="343.0" prefWidth="979.0">
+           <columns>
+               <TableColumn fx:id="title" prefWidth="94.40000772476196" text="Title" />
+               <TableColumn fx:id="startDate" prefWidth="118.80001831054688" text="Start Time" />
+               <TableColumn fx:id="endDate" prefWidth="115.59994506835938" text="End Time" />
+               <TableColumn fx:id="lct" prefWidth="92.79998779296875" text="Location" />
+               <TableColumn fx:id="description" prefWidth="183.0" text="Description" />
+               <TableColumn fx:id="inviter" prefWidth="74.20001220703125" text="Inviter" />
+               <TableColumn fx:id="creationDate" prefWidth="150.20001220703125" text="Creation Date" />
+               <TableColumn fx:id="lastEditDate" prefWidth="151.0" text="Last Edit Date" />
+           </columns>
+       </TableView>
+      <Button layoutX="927.0" layoutY="362.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@styles.css" text="Back" />
+   </children>
+</AnchorPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="GridPane" alignment="CENTER" prefHeight="496.0" prefWidth="748.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.CreateAppointmentController">
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+        <Pane layoutX="-1.0" layoutY="8.0" prefHeight="481.0" prefWidth="802.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0">
+
+            <children>
+                <Button fx:id="createAppointmentBtn" layoutX="32.0" layoutY="393.0" mnemonicParsing="false" onAction="#createAppointment" prefHeight="34.0" prefWidth="219.0" stylesheets="@styles.css" text="Create Appointment" textFill="#260202" />
+
+                <Button fx:id="backBtn" layoutX="481.0" layoutY="393.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="219.0" stylesheets="@styles.css" text="Back" textFill="#260202" />
+                <Label alignment="TOP_LEFT" layoutX="20.0" layoutY="95.0" prefHeight="30.0" prefWidth="500" stylesheets="@styles.css" text="Title" />
+                <Label alignment="TOP_LEFT" layoutX="32.0" layoutY="298.0" prefHeight="30.0" prefWidth="500" stylesheets="@styles.css" text="Date" />
+                <TextField fx:id="titletxt" layoutX="131.0" layoutY="91.0" prefHeight="34.0" prefWidth="158.0" promptText="Title" />
+                <Separator layoutX="-6.0" layoutY="325.0" prefHeight="34.0" prefWidth="757.0" />
+                <DatePicker fx:id="date" layoutX="156.0" layoutY="296.0" prefHeight="34.0" prefWidth="158.0" />
+                <Label layoutX="20.0" layoutY="142.0" prefHeight="17.0" prefWidth="239.0" stylesheets="@styles.css" text="Start Time" />
+
+                <HBox layoutX="131.0" layoutY="142.0" prefHeight="34.0" prefWidth="158.0" spacing="10">
+                    <Spinner fx:id="startHoursSpinner" editable="true" prefWidth="60">
+                        <valueFactory>
+                            <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="0" max="23" min="0" />
+                        </valueFactory>
+                    </Spinner>
+                    <Spinner fx:id="startMinutesSpinner" editable="true" prefWidth="60">
+                        <valueFactory>
+                            <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="0" max="59" min="0" />
+                        </valueFactory>
+                    </Spinner>
+                </HBox>
+                <Label layoutX="20.0" layoutY="219.0" prefHeight="17.0" prefWidth="100.0" stylesheets="@styles.css" text="End Time" />
+                <HBox layoutX="131.0" layoutY="219.0" prefHeight="34.0" prefWidth="158.0" spacing="10">
+                    <Spinner fx:id="endHoursSpinner" editable="true" prefWidth="60">
+                        <valueFactory>
+                            <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="0" max="23" min="0" />
+                        </valueFactory>
+                    </Spinner>
+                    <Spinner fx:id="endMinutesSpinner" editable="true" prefWidth="60">
+                        <valueFactory>
+                            <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="0" max="59" min="0" />
+                        </valueFactory>
+                    </Spinner>
+                </HBox>
+                <Label layoutX="346.0" layoutY="148.0" prefHeight="23.0" prefWidth="132.0" stylesheets="@styles.css" text="Description" />
+               <TextArea fx:id="description" layoutX="346.0" layoutY="180.0" prefHeight="137.0" prefWidth="358.0" wrapText="true" />
+            <TextField fx:id="locationfx" layoutX="418.0" layoutY="96.0" promptText="Location" />
+            <Label layoutX="346.0" layoutY="101.0" stylesheets="@styles.css" text="Location" textFill="WHITE" />
+            <Label layoutX="294.0" layoutY="33.0" text="Create an appointment">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+      <ListView fx:id="listfx" prefHeight="130.0" prefWidth="748.0" GridPane.rowIndex="1" />
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+
+</GridPane>

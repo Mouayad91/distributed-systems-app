@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane id="GridPane" alignment="CENTER" prefHeight="496.0" prefWidth="792.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.UpdateUserController">
+
+<AnchorPane id="GridPane" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"/>
+    <children>
+        <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0" />
+        <Pane layoutX="-1.0" layoutY="8.0" prefHeight="496.0" prefWidth="798.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0">
+            <children>
+                <Button fx:id="saveBtn" layoutX="539.0" layoutY="284.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="34.0" prefWidth="222.0" stylesheets="@styles.css" text="Update" textFill="#260202" />
+                <Button fx:id="backBtn" layoutX="695.0" layoutY="418.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="77.0" stylesheets="@styles.css" text="Back" textFill="#260202" />
+                <TextField fx:id="newPasswordReptxt" layoutX="539.0" layoutY="191.0" onAction="#updateUser" prefHeight="34.0" prefWidth="222.0" promptText="Repeat New Password" />
+                <TextField fx:id="newUserName" layoutX="23.0" layoutY="180.0" onAction="#updateUser" prefHeight="34.0" prefWidth="222.0" promptText="new Username" />
+                <TextField fx:id="newEmail" layoutX="23.0" layoutY="224.0" onAction="#updateUser" prefHeight="34.0" prefWidth="222.0" promptText="new email" />
+                <Label layoutX="198.0" layoutY="280.0" text="Role" />
+                <ChoiceBox fx:id="choiceBox" layoutX="23.0" layoutY="276.0" prefHeight="25.0" prefWidth="158.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="ADMIN" />
+                            <String fx:value="USER" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Separator layoutX="23.0" layoutY="323.0" prefHeight="34.0" prefWidth="757.0" />
+                <Separator layoutX="23.0" layoutY="57.0" prefHeight="34.0" prefWidth="757.0" />
+            <TextField fx:id="newPasswordtxt" layoutX="539.0" layoutY="102.0" prefHeight="34.0" prefWidth="222.0" promptText="New Password" />
+            <Label layoutX="331.0" layoutY="21.0" text="Update User Account">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="427.0" text="Please enter a password matching our password requirements: min length: 4" />
+            <TextField fx:id="firstName" layoutX="23.0" layoutY="91.0" prefHeight="34.0" prefWidth="222.0" promptText="First Name" />
+            <TextField fx:id="lastName" layoutX="23.0" layoutY="136.0" prefHeight="34.0" prefWidth="222.0" promptText="Last Name" stylesheets="@styles.css" />
+            <Label layoutX="362.0" layoutY="42.0" text="Account Name" />
+            </children>
+        </Pane>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Circle?>
+<GridPane id="gridPane" prefHeight="496.0" prefWidth="Infinity" alignment="CENTER" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.htwsaar.vs.gruppe05.client.controllers.UserIndexController">
+    <AnchorPane layoutY="1.0" prefHeight="496.0" prefWidth="801.0" style="-fx-background-color: #e5e5e5;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <children>
+            <Label layoutX="490.0" layoutY="14.0" prefHeight="35.0" prefWidth="189.0" text="Appointments" style="-fx-font-size: 20px;"/>
+            <Circle fx:id="notifyDot" />
+            <Button fx:id="createAppointmentBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#createAppointment" prefHeight="34.0" prefWidth="234.0" stylesheets="@styles.css" text="Create an Apointment" />
+            <Button fx:id="logoutBtn" layoutX="860.0" layoutY="56.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="234.0" stylesheets="@styles.css" text="Logout" />
+            <Button fx:id="editMYAccount" layoutX="860.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToEditMyAccountView" prefHeight="34.0" prefWidth="234.0" stylesheets="@styles.css" text="Edit my Account" />
+            <Button fx:id="invitationsBtn" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#goToInvitations" prefHeight="34.0" prefWidth="234.0" stylesheets="@styles.css" text="Invitation" />
+            <TableView fx:id="appointmentTableView" layoutX="2.0" layoutY="106.0" prefHeight="360.0" prefWidth="1098">
+                <columns>
+                    <TableColumn fx:id="title" prefWidth="117.0" text="Title" />
+                    <TableColumn fx:id="startDate" prefWidth="122.4000244140625" text="Start Time" />
+                    <TableColumn fx:id="endDate" prefWidth="124.00001525878906" text="End Time" />
+                    <TableColumn fx:id="lct" prefWidth="90.4000244140625" text="Location" />
+                    <TableColumn fx:id="description" prefWidth="192.7999267578125" text="Description" />
+                    <TableColumn fx:id="inviter" prefWidth="59.99993896484375" text="Inviter" />
+                    <TableColumn fx:id="status" prefWidth="91.20001220703125" text="Status" />
+                    <TableColumn fx:id="creationDate" prefWidth="154.4000244140625" text="Creation Date" />
+                    <TableColumn fx:id="lastEditDate" prefWidth="152.79998779296875" text="Last Edit Date" />
+                </columns>
+            </TableView>
+        </children>
+    </AnchorPane>
+   <columnConstraints>
+   </columnConstraints>
+   <rowConstraints>
+
+   </rowConstraints>
+</GridPane>
